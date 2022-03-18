@@ -1,0 +1,159 @@
+<div class="col-sm-12">
+    <div class="col-sm-12">
+        <h2>Warm-Up</h2>
+    </div>  
+    <div class="col-sm-12">
+        <label>Rounds to complete: {{rounds}}</label>
+    </div>
+    <div class="col-sm-12">
+        <div class="table-responsive-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Reps to complete:
+                        </th>
+                        <th scope="col">
+                            Exercise to do:
+                        </th>
+                        <th colspan="4" scope="col">
+                            Equipment used:
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th scope="col">
+                            Amount to get:
+                        </th>
+                        <th scope="col">
+                            Name:
+                        </th>
+                        <th scope="col">
+                            Rx for men:
+                        </th>
+                        <th scope="col">
+                            Rx for women:
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exercise of warm_up_exercises">
+                        <td>{{exercise.Reps}}</td>
+                        <td>{{exercise.Name}}</td>
+                        <td>{{exercise.Equipment?.Amount}}</td>
+                        <td>{{exercise.Equipment?.EquipmentEnum}}</td>
+                        <td>{{exercise.Equipment?.RxMen}}</td>
+                        <td>{{exercise.Equipment?.RxWomen}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <div class="col-sm-12">
+        <h2>Strength and Technique</h2>
+    </div>  
+    <div class="col-sm-12">
+        <label>Rounds to complete: {{rounds}}</label>
+    </div>
+    <div class="col-sm-12">
+        <div class="table-responsive-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Reps to complete:
+                        </th>
+                        <th scope="col">
+                            Exercise to do:
+                        </th>
+                        <th colspan="4" scope="col">
+                            Equipment used:
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th scope="col">
+                            Amount to get:
+                        </th>
+                        <th scope="col">
+                            Name:
+                        </th>
+                        <th scope="col">
+                            Rx for men:
+                        </th>
+                        <th scope="col">
+                            Rx for women:
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exercise of warm_up_exercises">
+                        <td>{{exercise.Reps}}</td>
+                        <td>{{exercise.Name}}</td>
+                        <td>{{exercise.Equipment?.Amount}}</td>
+                        <td>{{exercise.Equipment?.EquipmentEnum}}</td>
+                        <td>{{exercise.Equipment?.RxMen}}</td>
+                        <td>{{exercise.Equipment?.RxWomen}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <div class="col-sm-12">
+        <h2>Workout of the Day (WOD)</h2>
+    </div>  
+    <div class="col-sm-12">
+        <label>Rounds to complete: {{rounds}}</label>
+    </div>
+    <div class="col-sm-12">
+        <div class="table-responsive-sm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Reps to complete:
+                        </th>
+                        <th scope="col">
+                            Exercise to do:
+                        </th>
+                        <th colspan="4" scope="col">
+                            Equipment used:
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th scope="col">
+                            Amount to get:
+                        </th>
+                        <th scope="col">
+                            Name:
+                        </th>
+                        <th scope="col">
+                            Rx for men:
+                        </th>
+                        <th scope="col">
+                            Rx for women:
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exercise of warm_up_exercises">
+                        <td>{{exercise.Reps}}</td>
+                        <td>{{exercise.Name}}</td>
+                        <td>{{exercise.Equipment?.Amount}}</td>
+                        <td>{{exercise.Equipment?.EquipmentEnum}}</td>
+                        <td>{{exercise.Equipment?.RxMen}}</td>
+                        <td>{{exercise.Equipment?.RxWomen}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
