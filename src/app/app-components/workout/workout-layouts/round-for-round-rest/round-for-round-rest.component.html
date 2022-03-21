@@ -1,0 +1,25 @@
+<div *ngIf="roundForRoundRestModel" class="col-sm-12">
+    <div class="col-sm-12">
+        <h2>{{roundForRoundRestModel.Title}}</h2>
+    </div>  
+    <div class="col-sm-12">
+        <label>Rounds: <strong>{{roundForRoundRestModel.Rounds}}</strong></label>
+    </div>
+    <div class="col-sm-12">
+        <label>Rest between rounds: <strong>{{roundForRoundRestModel.Rest}} min rest</strong></label>
+    </div>
+    <div class="col-sm-12">
+        <div class="table-responsive-sm">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let movement of roundForRoundRestModel.Movements">
+                        <td><span *ngIf="movement.Reps">{{movement.Reps}}</span></td>
+                        <td><span *ngIf="movement.Name">{{movement.Name}}</span></td>
+                        <td><span *ngIf="movement.RxMen && movement.RxWomen">Rx Men: {{movement.RxMen}} | Rx Women: {{movement.RxWomen}}</span></td>
+                        <td><span *ngIf="movement.Equipment"> {{movement.Equipment}}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
