@@ -8,6 +8,9 @@ import { NavBarComponent } from './app-components/nav-bar/nav-bar.component';
 import { DashboardComponent } from './app-components/dashboard/dashboard.component';
 import { BookingsComponent } from './app-components/bookings/bookings.component';
 import { UserProfileComponent } from './app-components/user-profile/user-profile.component';
+import { WorkoutService } from './providers/workout-service.provider';
+import { RoundForRoundRestComponent } from './app-components/workout/workout-layouts/round-for-round-rest/round-for-round-rest.component';
+import { RoundForRoundComponent } from './app-components/workout/workout-layouts/round-for-round/round-for-round.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,17 @@ import { UserProfileComponent } from './app-components/user-profile/user-profile
     NavBarComponent,
     DashboardComponent,
     BookingsComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    RoundForRoundRestComponent,
+    RoundForRoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    WorkoutService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
